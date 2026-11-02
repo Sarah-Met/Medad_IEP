@@ -3427,9 +3427,12 @@ ul {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   z-index: 2000;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1.5rem;
+  box-sizing: border-box;
+  overflow-y: auto;
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--transition), visibility var(--transition);
@@ -3450,6 +3453,8 @@ ul {
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
   transform: translateY(20px) scale(0.98);
   transition: transform var(--transition);
+  box-sizing: border-box;
+  margin: auto;
 }
 
 .modal-overlay.active .modal-dialog {
@@ -3537,6 +3542,8 @@ ul {
 .form-input,
 .form-select {
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   padding: 0.75rem 1rem;
   border-radius: var(--r-sm);
   border: 1px solid var(--border);
@@ -3912,6 +3919,90 @@ ul {
     gap: 1.5rem;
   }
 
+  /* Global sections on mobile: comfortable Qatar Airways-style spacing & typography */
+  .section {
+    padding-block: 3.25rem 3.5rem !important;
+  }
+
+  .container {
+    padding-inline: 1.15rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .section-head {
+    margin-bottom: 2rem !important;
+  }
+
+  .section-tag {
+    font-size: 0.72rem !important;
+    padding: 0.25rem 0.65rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  .section-title {
+    font-size: clamp(1.45rem, 5.5vw, 1.85rem) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 0.65rem !important;
+  }
+
+  .section-subtitle {
+    font-size: 0.88rem !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Scaled Medad Circle Orbit for phone */
+  .medad-circle-section {
+    padding-block: 3.25rem 3.75rem !important;
+    overflow: hidden !important;
+  }
+
+  .medad-showcase-stage {
+    overflow: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+
+  .medad-burst-hub {
+    --orbit-scale: 0.30 !important;
+    min-height: 320px !important;
+    height: 320px !important;
+    width: 320px !important;
+    max-width: calc(100vw - 2rem) !important;
+    margin: 0 auto;
+  }
+
+  .medad-logo-core,
+  .medad-circle-disc {
+    width: 130px !important;
+    height: 130px !important;
+  }
+
+  .medad-node-card {
+    width: 86px !important;
+    min-height: 56px !important;
+    padding: 0.3rem 0.25rem !important;
+    border-radius: 10px !important;
+  }
+
+  .medad-node-icon {
+    width: 22px !important;
+    height: 22px !important;
+    border-radius: 6px !important;
+    margin-bottom: 0.2rem !important;
+  }
+
+  .medad-node-icon svg {
+    width: 13px !important;
+    height: 13px !important;
+  }
+
+  .medad-node-title {
+    font-size: 0.56rem !important;
+    line-height: 1.2 !important;
+  }
+
   .pillars-grid {
     grid-template-columns: 1fr;
   }
@@ -3920,8 +4011,76 @@ ul {
     grid-template-columns: 1fr;
   }
 
+  .integration-item {
+    padding: 1.25rem !important;
+    border-radius: 16px !important;
+  }
+
+  .integration-title {
+    font-size: 1.05rem !important;
+  }
+
+  .integration-desc {
+    font-size: 0.82rem !important;
+  }
+
   .why-grid {
     grid-template-columns: 1fr;
+  }
+
+  .why-card {
+    padding: 1.35rem 1.15rem !important;
+    border-radius: 16px !important;
+  }
+
+  .why-title {
+    font-size: 1.1rem !important;
+  }
+
+  .why-desc {
+    font-size: 0.84rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .consultancy-section {
+    padding-block: 3.25rem 3.5rem !important;
+  }
+
+  .consultancy-card {
+    padding: 1.35rem 1.15rem !important;
+    border-radius: 16px !important;
+  }
+
+  .consultancy-title {
+    font-size: 1.45rem !important;
+  }
+
+  .consultancy-lead {
+    font-size: 0.88rem !important;
+  }
+
+  .cta-box {
+    padding: 2.5rem 1.25rem !important;
+    border-radius: 20px !important;
+  }
+
+  .cta-title {
+    font-size: 1.45rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .cta-desc {
+    font-size: 0.86rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .cta-actions .btn {
+    width: 100% !important;
+    max-width: 280px !important;
+    margin-inline: auto !important;
+    min-height: 44px !important;
+    font-size: 0.88rem !important;
   }
 
   .footer-top {
@@ -3932,5 +4091,88 @@ ul {
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+
+  /* Mobile Modal Dialog (Fix "out of frames"): perfectly centered, auto-sized, zero overflow */
+  .modal-overlay {
+    padding: 0.85rem !important;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box !important;
+  }
+
+  .modal-dialog {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: auto !important;
+    padding: 1.5rem 1.15rem 1.65rem !important;
+    border-radius: 20px !important;
+    box-sizing: border-box !important;
+    max-height: calc(100dvh - 1.75rem);
+    overflow-y: auto;
+  }
+
+  .modal-close {
+    top: 0.85rem !important;
+    right: 0.85rem !important;
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+  }
+
+  .modal-close svg {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  .modal-heading {
+    font-size: 1.25rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 0.35rem !important;
+    padding-right: 2.25rem !important;
+  }
+
+  .modal-sub {
+    font-size: 0.82rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 1.15rem !important;
+  }
+
+  .form-group {
+    margin-bottom: 0.85rem !important;
+  }
+
+  .form-label {
+    font-size: 0.78rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .form-input,
+  .form-select {
+    padding: 0.65rem 0.8rem !important;
+    font-size: 16px !important; /* 16px prevents iOS Safari from zooming in on focus */
+    border-radius: 10px !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .form-select {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .form-btn {
+    padding: 0.75rem 1.25rem !important;
+    font-size: 0.92rem !important;
+    border-radius: 12px !important;
+    margin-top: 0.5rem !important;
+    width: 100% !important;
   }
 }
