@@ -71,6 +71,9 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -3450,16 +3453,16 @@ ul {
 .modal-dialog {
   background: #FFFFFF;
   border-radius: clamp(16px, 3.5vw, 24px);
-  max-width: min(500px, 100%);
-  width: 100%;
-  min-width: 0;
-  padding: clamp(1.25rem, 4vw, 2.25rem);
+  width: min(480px, calc(100vw - 2rem)) !important;
+  max-width: min(480px, calc(100vw - 2rem)) !important;
+  min-width: 0 !important;
+  padding: clamp(1.25rem, 4vw, 2rem) !important;
   position: relative;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
   transform: translateY(20px) scale(0.98);
   transition: transform var(--transition);
-  box-sizing: border-box;
-  margin: auto;
+  box-sizing: border-box !important;
+  margin: auto !important;
   max-height: calc(100vh - 2rem);
   max-height: calc(100dvh - 2rem);
   overflow-y: auto;
