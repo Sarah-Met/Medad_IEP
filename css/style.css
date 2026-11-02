@@ -740,12 +740,12 @@ ul {
 /* Floating White Live Preview Card (Tall Formix/Editorial Widget) */
 .hero-live-card {
   width: 100%;
-  max-width: 340px;
+  max-width: 275px;
   background: #FFFFFF;
   color: var(--ink);
-  border-radius: 28px;
-  padding: 1.15rem 1.15rem 1.25rem 1.15rem;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  border-radius: 22px;
+  padding: 0.95rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   transition: transform var(--transition), box-shadow var(--transition);
@@ -753,7 +753,7 @@ ul {
 
 .hero-live-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
 }
 
 .live-card-topbar {
@@ -761,7 +761,7 @@ ul {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.75rem;
   padding-inline: 0.15rem;
 }
 
@@ -777,20 +777,20 @@ ul {
 }
 
 .live-card-brand-tag svg {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   fill: var(--purple);
   stroke: none;
   display: block;
 }
 
 .live-card-thumb {
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
   aspect-ratio: 1 / 1.15;
-  height: 240px;
+  height: 165px;
   width: 100%;
-  margin-bottom: 0.95rem;
+  margin-bottom: 0.75rem;
   background: #1A0D22;
 }
 
@@ -804,12 +804,12 @@ ul {
 
 .live-card-body {
   text-align: center;
-  margin-bottom: 1.15rem;
-  padding-inline: 0.35rem;
+  margin-bottom: 0.85rem;
+  padding-inline: 0.25rem;
 }
 
 .live-card-name {
-  font-size: 1.08rem;
+  font-size: 0.98rem;
   font-weight: 700;
   color: var(--ink);
   line-height: 1.25;
@@ -817,18 +817,18 @@ ul {
 }
 
 .live-card-role {
-  font-size: 0.84rem;
+  font-size: 0.78rem;
   font-weight: 600;
   color: var(--purple);
-  margin-top: 0.25rem;
+  margin-top: 0.2rem;
   line-height: 1.35;
 }
 
 .live-card-desc {
-  font-size: 0.74rem;
+  font-size: 0.7rem;
   color: var(--ink-muted);
-  line-height: 1.45;
-  margin-top: 0.35rem;
+  line-height: 1.4;
+  margin-top: 0.25rem;
   margin-bottom: 0;
 }
 
@@ -839,28 +839,28 @@ ul {
   justify-content: space-between;
   background: linear-gradient(135deg, #83287F 0%, #681f65 100%);
   color: #FFFFFF;
-  padding: 0.4rem 0.4rem 0.4rem 1.4rem;
-  min-height: 54px;
+  padding: 0.3rem 0.3rem 0.3rem 1.15rem;
+  min-height: 44px;
   border-radius: 999px;
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: -0.01em;
-  box-shadow: 0 8px 24px rgba(131, 40, 127, 0.38);
+  box-shadow: 0 6px 20px rgba(131, 40, 127, 0.35);
   transition: all var(--transition);
   text-decoration: none;
   box-sizing: border-box;
 }
 
 .live-card-btn .btn-arrow-icon {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: #FFFFFF;
   color: var(--purple);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   flex-shrink: 0;
   margin-left: auto;
   transition: background var(--transition), color var(--transition), box-shadow var(--transition);
@@ -1151,8 +1151,8 @@ ul {
 
 .medad-node {
   position: absolute;
-  top: calc(50% + var(--node-y, 0px));
-  left: calc(50% + var(--node-x, 0px));
+  top: calc(50% + (var(--node-y, 0px) * var(--orbit-scale, 1)));
+  left: calc(50% + (var(--node-x, 0px) * var(--orbit-scale, 1)));
   transform: translate(-50%, -50%);
   background: none;
   border: none;
@@ -1662,11 +1662,16 @@ ul {
     min-height: auto;
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
   }
 
   .medad-stage-left {
     transform: none !important;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
   }
 
   .medad-stage-right {
@@ -1676,7 +1681,8 @@ ul {
     top: auto !important;
     transform: none !important;
     width: 100% !important;
-    max-width: 100% !important;
+    max-width: 600px !important;
+    margin: 1.5rem auto 0;
     opacity: 1 !important;
     visibility: visible !important;
     pointer-events: auto !important;
@@ -1688,56 +1694,165 @@ ul {
     animation: detailFadeIn 0.35s ease;
   }
 
+  /* Keep the circle intact with orbiting options scaled to tablet */
   .medad-burst-hub {
-    min-height: auto;
-    flex-direction: column;
-    gap: 2.5rem;
+    --orbit-scale: 0.62;
+    min-height: 640px;
+    height: 640px;
+    width: 680px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .medad-logo-core {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    width: 290px;
-    height: 290px;
-    margin-bottom: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 270px;
+    margin: 0;
   }
 
   .medad-circle-disc {
-    width: 290px;
-    height: 290px;
-  }
-
-  .medad-rays-container {
-    display: none;
+    width: 270px;
+    height: 270px;
   }
 
   .medad-nodes-orbit {
-    position: relative;
-    inset: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-    width: 100%;
+    position: absolute;
+    inset: 0;
+    display: block;
   }
 
   .medad-node {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none !important;
+    position: absolute;
+    top: calc(50% + (var(--node-y, 0px) * var(--orbit-scale, 1)));
+    left: calc(50% + (var(--node-x, 0px) * var(--orbit-scale, 1)));
+    transform: translate(-50%, -50%);
   }
 
   .medad-node-card {
-    width: 100%;
-    min-height: 140px;
+    width: 140px;
+    min-height: 84px;
+    padding: 0.55rem 0.5rem;
+    border-radius: 14px;
+  }
+
+  .medad-node-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    margin-bottom: 0.25rem;
+  }
+
+  .medad-node-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .medad-node-title {
+    font-size: 0.7rem;
+    line-height: 1.25;
   }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 767px) {
+  /* Scale circle and orbiting options to phone */
+  .medad-burst-hub {
+    --orbit-scale: 0.34;
+    min-height: 350px;
+    height: 350px;
+    width: 350px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .medad-logo-core {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+    height: 140px;
+    margin: 0;
+  }
+
+  .medad-circle-disc {
+    width: 140px;
+    height: 140px;
+  }
+
   .medad-nodes-orbit {
-    grid-template-columns: 1fr;
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+
+  .medad-node {
+    position: absolute;
+    top: calc(50% + (var(--node-y, 0px) * var(--orbit-scale, 1)));
+    left: calc(50% + (var(--node-x, 0px) * var(--orbit-scale, 1)));
+    transform: translate(-50%, -50%);
+  }
+
+  .medad-node-card {
+    width: 76px;
+    min-height: 56px;
+    padding: 0.25rem 0.15rem;
+    border-radius: 9px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22);
+  }
+
+  .medad-node-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    margin-bottom: 0.15rem;
+  }
+
+  .medad-node-icon svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .medad-node-title {
+    font-size: 0.48rem;
+    line-height: 1.15;
+    font-weight: 700;
+  }
+
+  .medad-stage-right {
+    max-width: 100% !important;
+    margin-top: 1.25rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .medad-burst-hub {
+    --orbit-scale: 0.29;
+    min-height: 310px;
+    height: 310px;
+    width: 310px;
+  }
+
+  .medad-logo-core,
+  .medad-circle-disc {
+    width: 120px;
+    height: 120px;
+  }
+
+  .medad-node-card {
+    width: 66px;
+    min-height: 50px;
   }
 }
 
@@ -3686,7 +3801,7 @@ ul {
     overflow: hidden;
   }
 
-  /* Hero Live Card on Phone */
+  /* Hero Live Card on Phone: neat, compact, much smaller */
   .hero-aside-col {
     width: 100%;
     display: flex;
@@ -3694,41 +3809,47 @@ ul {
   }
 
   .hero-live-card {
-    max-width: 100% !important;
+    max-width: 235px !important;
     width: 100%;
-    padding: 1rem !important;
-    border-radius: 20px !important;
-    margin-top: 1rem;
+    padding: 0.8rem 0.85rem !important;
+    border-radius: 18px !important;
+    margin: 1.25rem auto 0 !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35) !important;
   }
 
   .live-card-thumb {
-    height: 180px !important;
+    height: 120px !important;
     aspect-ratio: auto !important;
-    margin-bottom: 0.75rem;
-    border-radius: 14px;
+    margin-bottom: 0.55rem;
+    border-radius: 12px;
+  }
+
+  .live-card-body {
+    margin-bottom: 0.65rem !important;
   }
 
   .live-card-name {
-    font-size: 1.05rem !important;
+    font-size: 0.88rem !important;
   }
 
   .live-card-role {
-    font-size: 0.8rem !important;
+    font-size: 0.72rem !important;
   }
 
   .live-card-desc {
-    font-size: 0.75rem !important;
+    font-size: 0.65rem !important;
+    line-height: 1.35 !important;
   }
 
   .live-card-btn {
-    padding: 0.35rem 0.35rem 0.35rem 1rem !important;
-    min-height: 44px !important;
-    font-size: 0.9rem !important;
+    padding: 0.25rem 0.25rem 0.25rem 0.85rem !important;
+    min-height: 38px !important;
+    font-size: 0.78rem !important;
   }
 
   .live-card-btn .btn-arrow-icon {
-    width: 36px !important;
-    height: 36px !important;
+    width: 30px !important;
+    height: 30px !important;
   }
 
   .metrics-grid {
