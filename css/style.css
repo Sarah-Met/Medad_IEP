@@ -344,7 +344,7 @@ ul {
   background-position: center 40%;
   background-attachment: fixed;
   color: #FFFFFF;
-  padding: clamp(5.5rem, 9vh, 7.5rem) max(2rem, calc((100% - 1480px) / 2)) clamp(4.25rem, 7.5vh, 6rem);
+  padding: clamp(5.5rem, 9vh, 7.5rem) max(1.5rem, calc((100% - 1480px) / 2)) clamp(4.25rem, 7.5vh, 6rem);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -368,17 +368,17 @@ ul {
    -------------------------------------------------------------------------- */
 .hero-header {
   position: absolute;
-  top: 1.5rem;
+  top: 1.25rem;
   left: 0;
   right: 0;
-  max-width: 1480px;
-  margin-inline: auto;
-  padding-inline: clamp(1rem, 2.5vw, 2rem);
+  width: 100%;
+  padding-inline: max(1.5rem, calc((100% - 1480px) / 2));
+  box-sizing: border-box;
   z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.75rem;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   pointer-events: auto;
 }
@@ -386,12 +386,14 @@ ul {
 /* Sticky floating state when scrolled down past the hero */
 .hero-header.is-sticky {
   position: fixed;
-  top: 1rem;
-  left: clamp(1rem, 2.5vw, 2.5rem);
-  right: clamp(1rem, 2.5vw, 2.5rem);
+  top: 0.75rem;
+  left: 0;
+  right: 0;
+  width: calc(100% - clamp(1rem, 2.5vw, 2.5rem));
   max-width: 1480px;
   margin-inline: auto;
-  padding: 0.7rem 1.4rem;
+  padding: 0.6rem 1.25rem;
+  box-sizing: border-box;
   background: rgba(22, 12, 38, 0.92);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -414,12 +416,14 @@ ul {
 }
 
 .hero-header.is-sticky .hero-brand img {
-  height: 50px;
+  height: 42px;
 }
 
 .hero-brand img {
-  height: 68px;
+  height: 52px;
   width: auto;
+  max-width: 210px;
+  object-fit: contain;
   filter: brightness(0) invert(1);
   transition: transform var(--transition), height 0.3s ease;
 }
@@ -3168,9 +3172,17 @@ ul {
   line-height: 1.5;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) and (min-width: 601px) {
   .trust-cards-grid {
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .trust-card:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 360px;
+    margin-inline: auto;
   }
 }
 
@@ -3178,6 +3190,11 @@ ul {
   .trust-cards-grid {
     grid-template-columns: 1fr;
     max-width: 360px;
+    margin-inline: auto;
+  }
+
+  .trust-card {
+    justify-self: center;
   }
 
   .trust-strip-section {
@@ -3546,31 +3563,47 @@ ul {
 @media (max-width: 1023px) {
   .hero-header {
     position: absolute;
-    top: 1rem;
+    top: 0.75rem;
     left: 0;
     right: 0;
-    padding-inline: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    margin-inline: 0;
+    padding-inline: 1.25rem;
+    box-sizing: border-box;
+  }
+
+  .hero-brand {
+    flex-shrink: 0;
   }
 
   .hero-brand img {
-    height: 48px;
+    height: 36px;
     width: auto;
-    max-width: 200px;
+    max-width: 155px;
     object-fit: contain;
   }
 
   .hero-pill-nav {
     display: flex;
     gap: 2px;
+    flex-shrink: 1;
+    min-width: 0;
   }
 
   .hero-pill-link {
-    padding: 0.45rem 0.75rem;
-    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.74rem;
+    min-height: 32px;
+  }
+
+  .hero-header-actions {
+    gap: 6px;
+    flex-shrink: 0;
   }
 
   .hero-editorial {
-    padding: 6.5rem 2rem 3.5rem;
+    padding: 6rem 1.25rem 3.5rem;
     min-height: auto;
     background-attachment: scroll;
   }
@@ -3585,13 +3618,17 @@ ul {
   }
 
   .hero-aside-col {
-    align-items: center;
-    width: 100%;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    display: flex !important;
+    width: 100% !important;
   }
 
   .hero-live-card {
-    max-width: 360px;
-    margin-inline: auto;
+    max-width: 250px !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    margin-top: 1.25rem !important;
   }
 
   .hero-headline {
@@ -3642,7 +3679,11 @@ ul {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0.75rem 1rem;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0.75rem 1rem !important;
+    box-sizing: border-box !important;
     background: rgba(22, 12, 38, 0.85);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
@@ -3657,9 +3698,9 @@ ul {
   }
 
   .hero-brand img {
-    height: 34px !important;
+    height: 32px !important;
     width: auto !important;
-    max-width: 140px !important;
+    max-width: 130px !important;
     object-fit: contain !important;
     filter: brightness(0) invert(1);
     display: block;
@@ -3677,10 +3718,10 @@ ul {
   }
 
   .hero-round-btn {
-    width: 38px;
-    height: 38px;
-    min-width: 38px;
-    min-height: 38px;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
@@ -3694,24 +3735,35 @@ ul {
 
   #hero-lang-btn {
     width: auto;
-    padding: 0 0.75rem;
+    padding: 0 0.65rem;
     border-radius: 999px;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     font-weight: 700;
+    height: 36px;
+    min-height: 36px;
   }
 
   .hero-round-btn svg {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
   }
 
-  /* Sticky Header on mobile when scrolled */
+  /* Sticky Header on mobile when scrolled: full edge-to-edge width, no clipping */
   .hero-header.is-sticky {
-    top: 0.5rem;
-    left: 0.5rem;
-    right: 0.5rem;
-    padding: 0.5rem 0.85rem;
-    border-radius: 999px;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    padding: 0.65rem 1rem !important;
+    box-sizing: border-box !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
   }
 
   .hero-header.is-sticky .hero-brand img {
@@ -3801,11 +3853,12 @@ ul {
     overflow: hidden;
   }
 
-  /* Hero Live Card on Phone: neat, compact, much smaller */
+  /* Hero Live Card on Phone: aligned left with text */
   .hero-aside-col {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 100% !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
   }
 
   .hero-live-card {
@@ -3813,7 +3866,9 @@ ul {
     width: 100%;
     padding: 0.8rem 0.85rem !important;
     border-radius: 18px !important;
-    margin: 1.25rem auto 0 !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    margin-top: 1.25rem !important;
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35) !important;
   }
 
