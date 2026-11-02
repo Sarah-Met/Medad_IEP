@@ -1,0 +1,9 @@
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary / Lock files
+~$*
+*.tmp

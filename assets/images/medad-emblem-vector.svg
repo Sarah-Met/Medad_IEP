@@ -1,0 +1,294 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%" class="medad-interactive-vector-emblem" id="medadInteractiveSvg" aria-label="Medad Institutional Effectiveness Platform Symbol" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality">
+  <!-- All 32 Complete Vector Rectangular Rods in Pure White (#FFFFFF) arranged directly on purple background -->
+  <!-- In rest state, all rods stay completely inside the circle (radius 120 to 350 <= 392) -->
+  <!-- Thick parts look inwards toward the circle, thin parts point outwards -->
+  <g class="medad-vec-rods-container" id="medadVecRodsContainer">
+                  <!-- Rod  0:   0.0 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="0" transform="rotate(0.0, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="0" data-feature="2" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod  1:  11.2 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="1" transform="rotate(11.25, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="1" data-feature="2" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod  2:  22.5 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="2" transform="rotate(22.5, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="2" data-feature="2" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod  3:  33.8 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="3" transform="rotate(33.75, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="3" data-feature="3" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod  4:  45.0 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="4" transform="rotate(45.0, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="4" data-feature="3" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod  5:  56.2 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="5" transform="rotate(56.25, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="5" data-feature="3" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod  6:  67.5 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="6" transform="rotate(67.5, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="6" data-feature="3" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod  7:  78.8 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="7" transform="rotate(78.75, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="7" data-feature="4" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod  8:  90.0 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="8" transform="rotate(90.0, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="8" data-feature="4" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod  9: 101.2 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="9" transform="rotate(101.25, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="9" data-feature="4" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 10: 112.5 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="10" transform="rotate(112.5, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="10" data-feature="4" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 11: 123.8 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="11" transform="rotate(123.75, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="11" data-feature="4" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 12: 135.0 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="12" transform="rotate(135.0, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="12" data-feature="5" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 13: 146.2 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="13" transform="rotate(146.25, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="13" data-feature="5" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 14: 157.5 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="14" transform="rotate(157.5, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="14" data-feature="5" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 15: 168.8 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="15" transform="rotate(168.75, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="15" data-feature="5" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 16: 180.0 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="16" transform="rotate(180.0, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="16" data-feature="6" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 17: 191.2 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="17" transform="rotate(191.25, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="17" data-feature="6" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 18: 202.5 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="18" transform="rotate(202.5, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="18" data-feature="6" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 19: 213.8 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="19" transform="rotate(213.75, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="19" data-feature="6" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 20: 225.0 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="20" transform="rotate(225.0, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="20" data-feature="6" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 21: 236.2 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="21" transform="rotate(236.25, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="21" data-feature="0" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 22: 247.5 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="22" transform="rotate(247.5, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="22" data-feature="0" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 23: 258.8 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="23" transform="rotate(258.75, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="23" data-feature="0" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 24: 270.0 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="24" transform="rotate(270.0, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="24" data-feature="0" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 25: 281.2 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="25" transform="rotate(281.25, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="25" data-feature="1" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 26: 292.5 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="26" transform="rotate(292.5, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="26" data-feature="1" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 27: 303.8 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="27" transform="rotate(303.75, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="27" data-feature="1" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 28: 315.0 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="28" transform="rotate(315.0, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="28" data-feature="1" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 29: 326.2 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="29" transform="rotate(326.25, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="29" data-feature="1" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 30: 337.5 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="30" transform="rotate(337.5, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="30" data-feature="2" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+
+                  <!-- Rod 31: 348.8 deg -->
+                  <g class="medad-vec-rod-pivot" data-rod-index="31" transform="rotate(348.75, 400, 400)">
+                    <g class="medad-vec-rod" data-rod="31" data-feature="2" shape-rendering="geometricPrecision">
+                      <rect x="510" y="378" width="250" height="44" fill="transparent" class="medad-rod-hitbox" />
+                      <rect x="520" y="388" width="115" height="24" rx="6" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-head" />
+                      <rect x="635" y="394" width="115" height="12" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision" class="medad-rod-stem" />
+                    </g>
+                  </g>
+  </g>
+</svg>
