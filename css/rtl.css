@@ -293,6 +293,16 @@
   }
 }
 
+[dir="rtl"] .modal-close {
+  right: auto !important;
+  left: 1rem !important;
+}
+
+[dir="rtl"] .modal-heading {
+  padding-right: 0 !important;
+  padding-left: 2.5rem !important;
+}
+
 @media (max-width: 767px) {
   [dir="rtl"] .modal-close {
     right: auto !important;

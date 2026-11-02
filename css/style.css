@@ -3423,16 +3423,20 @@ ul {
 .modal-overlay {
   position: fixed;
   inset: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(20, 22, 28, 0.75);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  z-index: 2000;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 99999;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: clamp(0.75rem, 3vw, 1.5rem);
   box-sizing: border-box;
+  overflow-x: hidden;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--transition), visibility var(--transition);
@@ -3445,16 +3449,21 @@ ul {
 
 .modal-dialog {
   background: #FFFFFF;
-  border-radius: var(--r-xl);
-  max-width: 520px;
+  border-radius: clamp(16px, 3.5vw, 24px);
+  max-width: min(500px, 100%);
   width: 100%;
-  padding: 2.5rem;
+  min-width: 0;
+  padding: clamp(1.25rem, 4vw, 2.25rem);
   position: relative;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
   transform: translateY(20px) scale(0.98);
   transition: transform var(--transition);
   box-sizing: border-box;
   margin: auto;
+  max-height: calc(100vh - 2rem);
+  max-height: calc(100dvh - 2rem);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-overlay.active .modal-dialog {
@@ -3463,45 +3472,39 @@ ul {
 
 .modal-close {
   position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  width: 44px;
-  height: 44px;
-  min-width: 44px;
-  min-height: 44px;
-  border-radius: 0;
+  top: 1rem;
+  right: 1rem;
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  min-height: 38px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
+  background: rgba(131, 40, 127, 0.08);
   border: none;
   box-shadow: none;
   outline: none;
   cursor: pointer;
   padding: 0;
   color: var(--purple);
-  font-size: 2rem;
-  line-height: 1;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease, opacity 0.2s ease;
-  opacity: 0.9;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+  z-index: 10;
 }
 
 .modal-close svg {
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
   stroke: var(--purple);
   stroke-width: 2.5;
   display: block;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), stroke 0.2s ease;
 }
 
 .modal-close:hover {
-  background: transparent;
-  border: none;
-  box-shadow: none;
+  background: rgba(131, 40, 127, 0.16);
   color: var(--purple-hover);
-  opacity: 1;
-  transform: scale(1.15);
+  transform: scale(1.08);
 }
 
 .modal-close:hover svg {
@@ -3513,27 +3516,43 @@ ul {
 }
 
 .modal-heading {
-  font-size: 1.625rem;
+  font-size: clamp(1.25rem, 4.5vw, 1.55rem);
   font-weight: 700;
-  /* Brand Spec: Bold 700 */
   color: var(--purple);
-  /* Brand Spec: Headings in Medad Purple #83287F */
-  margin-bottom: 0.5rem;
+  line-height: 1.25;
+  margin-bottom: 0.45rem;
+  padding-right: 2.5rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .modal-sub {
-  font-size: 0.9375rem;
+  font-size: clamp(0.82rem, 2.5vw, 0.92rem);
   color: var(--ink-muted);
-  margin-bottom: 1.75rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+#demoForm {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .form-group {
-  margin-bottom: 1.25rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  margin-bottom: 1.15rem;
 }
 
 .form-label {
   display: block;
-  font-size: 0.875rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: var(--ink);
   margin-bottom: 0.35rem;
@@ -3541,15 +3560,24 @@ ul {
 
 .form-input,
 .form-select {
+  display: block;
   width: 100%;
   max-width: 100%;
+  min-width: 0;
   box-sizing: border-box;
-  padding: 0.75rem 1rem;
-  border-radius: var(--r-sm);
+  padding: 0.72rem 0.9rem;
+  font-size: 16px;
+  border-radius: 10px;
   border: 1px solid var(--border);
   background: #FFFFFF;
   color: var(--ink);
   transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-select {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .form-input:focus,
@@ -3560,8 +3588,15 @@ ul {
 }
 
 .form-btn {
+  display: block;
   width: 100%;
-  margin-top: 0.5rem;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 0.82rem 1.25rem;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  margin-top: 0.65rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -4107,12 +4142,14 @@ ul {
   .modal-dialog {
     width: 100% !important;
     max-width: 100% !important;
+    min-width: 0 !important;
     margin: auto !important;
-    padding: 1.5rem 1.15rem 1.65rem !important;
+    padding: 1.35rem 1.1rem 1.5rem !important;
     border-radius: 20px !important;
     box-sizing: border-box !important;
-    max-height: calc(100dvh - 1.75rem);
-    overflow-y: auto;
+    max-height: calc(100dvh - 1.5rem) !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
   }
 
   .modal-close {
