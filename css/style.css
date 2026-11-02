@@ -44,7 +44,7 @@
   --font-base: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-ar: 'Tajawal', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
-  --max-w: 1240px;
+  --max-w: 1200px;
   --r-sm: 8px;
   --r-md: 16px;
   --r-lg: 24px;
@@ -338,7 +338,7 @@ ul {
     linear-gradient(180deg, rgba(20, 10, 40, 0.55) 0%, rgba(20, 10, 40, 0) 22%),
     linear-gradient(90deg, rgba(20, 10, 40, 0.62) 0%, rgba(20, 10, 40, 0.25) 42%, rgba(20, 10, 40, 0) 65%),
     linear-gradient(0deg, rgba(15, 8, 30, 0.6) 0%, rgba(15, 8, 30, 0) 40%),
-    url('../assets/images/hero-bg.jpg');
+    url('../assets/images/hero-bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 40%;
@@ -954,7 +954,7 @@ ul {
 
 /* Ensure interactive content & text stay crisply above the background wave layers */
 .medad-circle-section .container {
-  max-width: 1400px;
+  max-width: var(--max-w);
   position: relative;
   z-index: 2;
 }
@@ -2002,7 +2002,7 @@ ul {
 }
 
 .why-medad-section .container {
-  max-width: 1440px;
+  max-width: var(--max-w);
   position: relative;
   z-index: 2;
 }
@@ -2241,7 +2241,7 @@ ul {
   text-align: center;
   position: relative;
   z-index: 2;
-  max-width: 1400px;
+  max-width: var(--max-w);
   width: 100%;
   margin-inline: auto;
   padding-block: 2.25rem 1rem;
@@ -2364,7 +2364,7 @@ ul {
 }
 
 .consultancy-section .container {
-  max-width: 1400px;
+  max-width: var(--max-w);
 }
 
 .consultancy-grid {
@@ -3328,8 +3328,10 @@ ul {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 0;
   display: flex;
   align-items: center;
@@ -3465,6 +3467,10 @@ ul {
 }
 
 @media (max-width: 767px) {
+  body, p, .hero-description, .iep-benefit-text {
+    font-size: 16px;
+  }
+
   .page-wrapper {
     padding: 0;
   }
