@@ -44,7 +44,7 @@
   --font-base: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-ar: 'Tajawal', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
-  --max-w: 1200px;
+  --max-w: 1240px;
   --r-sm: 8px;
   --r-md: 16px;
   --r-lg: 24px;
@@ -954,7 +954,7 @@ ul {
 
 /* Ensure interactive content & text stay crisply above the background wave layers */
 .medad-circle-section .container {
-  max-width: var(--max-w);
+  max-width: 1400px;
   position: relative;
   z-index: 2;
 }
@@ -2002,7 +2002,7 @@ ul {
 }
 
 .why-medad-section .container {
-  max-width: var(--max-w);
+  max-width: 1440px;
   position: relative;
   z-index: 2;
 }
@@ -2241,7 +2241,7 @@ ul {
   text-align: center;
   position: relative;
   z-index: 2;
-  max-width: var(--max-w);
+  max-width: 1400px;
   width: 100%;
   margin-inline: auto;
   padding-block: 2.25rem 1rem;
@@ -2364,7 +2364,7 @@ ul {
 }
 
 .consultancy-section .container {
-  max-width: var(--max-w);
+  max-width: 1400px;
 }
 
 .consultancy-grid {
